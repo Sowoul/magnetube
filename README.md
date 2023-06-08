@@ -17,9 +17,12 @@ https://user-images.githubusercontent.com/93905595/234182862-3c15d788-249d-4a8d-
 
 
 # Requirements:  
-[webtorrent](https://www.npmjs.com/package/webtorrent-cli).
-[Flask and FlaskUI](https://flask.palletsprojects.com/en/2.3.x/installation/)
-[kivy and kivymd](https://kivymd.readthedocs.io/en/1.1.1/)
+[webtorrent](https://www.npmjs.com/package/webtorrent-cli).    
+    
+[Flask and FlaskUI](https://flask.palletsprojects.com/en/2.3.x/installation/)    
+    
+[kivy and kivymd](https://kivymd.readthedocs.io/en/1.1.1/)    
+   
 
 and other libraries listed in the script.
    
