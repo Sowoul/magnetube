@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BoredFlix</title>
+    <link
+      rel="stylesheet"
+      href="//releases.flowplayer.com/7.2.7/skin/skin.css"
+    />
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//releases.flowplayer.org/7.2.7/flowplayer.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 5px;
+        background-color: #242424;
+      }
+
+      .container {
+        max-width: 1300px;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .video-player {
+        width: 100%;
+        height: 545px;
+        background-color: #0000002f;
+        color: #000000;
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      .video-player video {
+        display: none;
+      }
+
+      .flowplayer {
+        width: 100%;
+        height: 100%;
+      }
+      .flowplayer .fp-color {
+        background-color: #ff3936;
+      }
+
+      /* .flowplayer .fp-progress {
+  background-color: #f43434d8;
+  color: #333333;
+} */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-player">
+        <div
+          class="flowplayer"
+          data-ratio="0.5625"
+          data-timeline="true"
+          data-progress="true"
+        >
+          <video>
+            <source
+              src="{{ url_for('stream', format='mp4') }}"
+              type="video/mp4"
+            />
+            <source
+              src="{{ url_for('stream', format='webm') }}"
+              type="video/webm"
+            />
+            <source
+              src="{{ url_for('stream', format='mkv') }}"
+              type="video/x-matroska"
+            />
+          </video>
+        </div>
+      </div>
+      <script>
+        flowplayer(".flowplayer", {
+          keyboard: false,
+          ratio: 3 / 4,
+          clip: {
+            live: false,
+            sources: [
+              {
+                type: "video/mp4",
+                src: "{{ url_for('stream', format='mp4') }}",
+              },
+              {
+                type: "video/webm",
+                src: "{{ url_for('stream', format='webm') }}",
+              },
+              {
+                type: "video/x-matroska",
+                src: "{{ url_for('stream', format='mkv') }}",
+              },
+            ],
+          },
+          splash: true,
+        }).on("ready", function (e, api, video) {
+          $(".fp-player").css("background-color", "black");
+        });
+      </script>
+    </div>
+  </body>
+</html>
