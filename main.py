@@ -27,7 +27,7 @@ atexit.register(temp_dir.cleanup)
 magnets = []
 inp = """
 MDTextField:
-    hint_text: "B O R E D F L I X"
+    hint_text: "M A G N E T U B E"
     pos_hint: {'center_x': 0.5, 'center_y': 0.5}
     icon_right: "movie-outline"
     size_hint_x: 0.4
@@ -135,7 +135,7 @@ class ItemConfirm(OneLineAvatarIconListItem):
                 num = 0
 
 
-class BoredFlix(MDApp):
+class Magnetube(MDApp):
     def reset(self):
         self.screen.remove_widget()
 
@@ -210,7 +210,12 @@ class BoredFlix(MDApp):
 
         def pway(movie, head):
             return (s.get(
-                "YOUR SOURCE HERE", headers=head)).text
+
+
+
+
+
+                """Link to magnetube website here.""", headers=head)).text
         try:
             f = pway(movie, head)
         except:
@@ -235,6 +240,6 @@ class BoredFlix(MDApp):
 
 
 try:
-    BoredFlix().run()
+    Magnetube().run()
 finally:
     requests_cache.clear()
