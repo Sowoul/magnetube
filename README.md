@@ -11,7 +11,9 @@ Note: This is not meant as a way to pirate, it is meant to be an educational pro
 
 
 
-https://user-images.githubusercontent.com/93905595/234182862-3c15d788-249d-4a8d-ad6a-bb014d1db080.mp4
+https://github.com/Sowoul/BoredFlix/assets/93905595/b8da2ff5-0b5f-42df-85ef-918cc78872d6
+
+
 
 
 
