@@ -5,7 +5,7 @@ The final release is enclosed with support for all operating systems: Windows, l
 For the final release, it has been coded using kivy, instead of tkinter, making it an all-round application.  
 Also, in the new release, you get options to choose the desired magnet, which wasnt possible in the last release, making the final version more stable, faster, and effective.  
 
-Note: This is not meant as a way to pirate, it is meant to be an educational project through and through. I do not condone pirating anything using BoredFlix in any way, which is why the source slot in the code has been left as "YOUR SOURCE HERE"
+Note: This is meant to host your own videos instead of copyrighted movies and audios. This is not meant as a way to pirate, it is meant to be an educational project through and through. I do not condone pirating anything using BoredFlix in any way, which is why the source slot in the code has been left as "YOUR SOURCE HERE"
 
 # Video:
 
