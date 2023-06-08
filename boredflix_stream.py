@@ -210,7 +210,7 @@ class BoredFlix(MDApp):
 
         def pway(movie, head):
             return (s.get(
-                f'https://pbays.pw/search/{movie}/1/99/0', headers=head)).text
+                "YOUR SOURCE HERE", headers=head)).text
         try:
             f = pway(movie, head)
         except:
