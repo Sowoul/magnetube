@@ -1,19 +1,22 @@
-# BoredFlix
+# Magnetube
 # Description:  
-Boredflix, as the name suggests, is an alternate for netflix, that takes a magnet source from you as input.  
-The final release is enclosed with support for all operating systems: Windows, linux, MacOS, Android, iOS, which was the achilles heel of the previou releases, some of which only supported linux.  
-For the final release, it has been coded using kivy, instead of tkinter, making it an all-round application.  
-Also, in the new release, you get options to choose the desired magnet, which wasnt possible in the last release, making the final version more stable, faster, and effective.  
+Introducing Magnetube, a revolutionary peer-to-peer (P2P) magnet-based platform that aims to redefine the way we share and consume video content. With our innovative technology and user-centric approach, we provide a decentralized and censorship-resistant platform for creators and viewers worldwide.
 
-Note: This is meant to host your own videos instead of copyrighted movies and audios. This is not meant as a way to pirate, it is meant to be an educational project through and through. I do not condone pirating anything using BoredFlix in any way, which is why the source slot in the code has been left as "YOUR SOURCE HERE"
+Magnetube leverages the power of magnet links, a lightweight and efficient method for sharing video files, allowing users to share their own content directly with others in a secure and decentralized manner. By eliminating the need for central servers, we empower users to take control of their content and foster a truly democratic environment for creativity and expression.
 
-# Video:
+Key Features:
 
+Peer-to-Peer Content Sharing: Our platform utilizes P2P technology to enable seamless sharing of video content between users. Content creators can upload their videos to the platform, generate magnet links, and distribute them to their audience. Viewers can then easily access and stream the content directly from other users who have downloaded and are sharing the videos.
 
+Decentralization and Censorship Resistance: By operating on a decentralized network, Magnetube ensures that content remains accessible even in the face of censorship attempts or server failures. The absence of a central authority provides users with the freedom to share and access content without restrictions, fostering an open and inclusive environment.
 
-https://github.com/Sowoul/BoredFlix/assets/93905595/b8da2ff5-0b5f-42df-85ef-918cc78872d6
+User Empowerment and Monetization: We believe in empowering creators by giving them full control over their content and offering multiple monetization options. Creators can monetize their videos through donations, subscriptions, or by incorporating advertisements, allowing them to generate revenue directly from their audience without intermediaries.
 
+Enhanced Privacy and Security: Magnetube prioritizes user privacy and security. With the decentralized nature of our platform, user data is distributed across multiple peers, reducing the risk of centralized data breaches. Additionally, strong encryption ensures that the content shared remains private and secure.
 
+Community Engagement and Discovery: Our platform fosters a vibrant community of creators and viewers, providing features for engagement, such as likes, comments, and the ability to create playlists. We also offer powerful search and recommendation algorithms, ensuring that users can discover new and relevant content easily.
+
+Magnetube is poised to revolutionize the way we share and consume video content, offering a decentralized, censorship-resistant, and user-centric alternative to traditional video platforms. Join us on this exciting journey, where creativity knows no boundaries, and content is truly in the hands of the community.
 
 
 
@@ -28,27 +31,3 @@ https://github.com/Sowoul/BoredFlix/assets/93905595/b8da2ff5-0b5f-42df-85ef-918c
 
 and other libraries listed in the script.
    
-# Installation:
-- Download the file and customise the theme and primary color to your liking.
-- Install the modules and dependencies for kivymd and webbrowser.
-- Provide a valid source for the magnet link, ideally a magnet link hosted by you.
-- Run the code, and wait for the window to appear.
-- Enter the title in the space provided, and hit search.
-- A pop up window should appear with a list of options.
-- Choose the option that best suits you, and you should get redirected to it.
-
-# Disclaimer:
-This project is made exclusively for educational purposes. I, in no form condone piracy of any form. This project is just supposed to enhance my coding skills, and to serve as a roadmap, in case someone else wants to use this as reference for their own projects. Ideally, this project is meant for people who already have the movies, and want to stream it to their friends, instead of pirating it, and for them to host a magnet link for it and stream it without the need to pirate.
-
-
-
-
-# Screenshots     
-
-![image](https://user-images.githubusercontent.com/93905595/236641588-7d7f389c-b58e-4842-9477-f427b5c64ca1.png)
-      
-      
-![image](https://user-images.githubusercontent.com/93905595/236641573-6555f552-d598-4cb5-807f-fc32c3d12ce1.png)
-    
-    
-![image](https://user-images.githubusercontent.com/93905595/236656604-f115ceb2-2975-4f9a-a5ba-4280a5ef208e.png)
