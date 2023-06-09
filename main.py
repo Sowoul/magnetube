@@ -126,11 +126,15 @@ class ItemConfirm(OneLineAvatarIconListItem):
                 num = int(num - int(num/3)*3)
                 if num == 1:
                     thrs(magnets[-3], download=False)
+                    print(magnets[-3])
 
                 elif num == 2:
                     thrs(magnets[-2], download=False)
+                    print(magnets[-3])
+
                 else:
                     thrs(magnets[-1], download=False)
+                    print(magnets[-3])
 
                 num = 0
 
@@ -202,20 +206,14 @@ class Magnetube(MDApp):
     def fin(self):
         temp_dir.cleanup
         self.loading()
-        movie = self.m.text.replace(' ', '%20')
+        movie = self.m.text.replace(' ', '+')
         requests_cache.install_cache('demo_cache')
         head = {
             'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.28 Safari/537.36'}
         s = requests.Session()
 
         def pway(movie, head):
-            return (s.get(
-
-
-
-
-
-                """Link to magnetube website here.""", headers=head)).text
+            return (s.get(f"http://localhost:5000/search/?keyword={movie}", headers=head)).text
         try:
             f = pway(movie, head)
         except:
@@ -227,13 +225,14 @@ class Magnetube(MDApp):
             self.err.open()
             return
 
-        titl = f.split('title="Details for ', 3)
-        f = f.split('<a href="magnet:', 3)
+        titl = f.split('<strong>Title:</strong>', 3)
+        f = f.split('<strong>Magnet Link:</strong>', 3)
+
         self.titls = []
         for i in range(1, 4):
             try:
-                self.titls.append(str(i)+'. '+titl[i][:titl[i].index('">')])
-                magnets.append("magnet:" + f[i][:f[i].index('"')])
+                self.titls.append(str(i)+'. '+titl[i][:titl[i].index('<')])
+                magnets.append("magnet:" + f[i][:f[i].index('\n')])
             except:
                 pass
         self.disp()
