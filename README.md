@@ -31,3 +31,12 @@ Magnetube is poised to revolutionize the way we share and consume video content,
 
 and other libraries listed in the script.
    
+   
+# Usage:
+
+Right now, magnetube code comes with just 3 non copyrighted videos of beaches, but the list can be updated by changing the value of the dictionary in the search_flask.py file.
+
+- First open a terminal and run the search_flask.py file by simply doing " python search_flask.py ".
+- Next, run the main. py file, again, by doing " python main.py "
+- Finally, search for "Beach", to get the 3 recommendations "Beach 1, Beach 2, and Beach 3 ".
+- Select any one and wait for it to start playing.
