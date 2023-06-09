@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results for "{{ keyword }}"</h1>
+
+    {% if resources %}
+    <ul>
+      {% for resource in resources %}
+      <li>
+        <strong>Title:</strong> {{ resource.title }}<br />
+        <strong>Magnet Link:</strong> {{ resource.magnet }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No matching resources found.</p>
+    {% endif %}
+  </body>
+</html>
