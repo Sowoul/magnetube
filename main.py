@@ -126,15 +126,12 @@ class ItemConfirm(OneLineAvatarIconListItem):
                 num = int(num - int(num/3)*3)
                 if num == 1:
                     thrs(magnets[-3], download=False)
-                    print(magnets[-3])
 
                 elif num == 2:
                     thrs(magnets[-2], download=False)
-                    print(magnets[-3])
 
                 else:
                     thrs(magnets[-1], download=False)
-                    print(magnets[-3])
 
                 num = 0
 
